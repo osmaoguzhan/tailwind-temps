@@ -1,0 +1,55 @@
+.hero {
+  background-image: url("../../public/loopstudio/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 768px) {
+    background-image: url("../../public/loopstudio/mobile/image-hero.jpg");
+    background-position: center;
+  }
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamtop,
+.hammiddle,
+.hambottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hammiddle {
+  transform: translateY(7px);
+}
+
+.hambottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(360deg);
+}
+
+.open .hamtop {
+  transform: rotate(45deg);
+}
+
+.open .hammiddle {
+  display: none;
+}
+
+.open .hambottom {
+  transform: rotate(-45deg);
+}

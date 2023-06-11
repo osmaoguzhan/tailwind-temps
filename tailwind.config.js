@@ -18,6 +18,9 @@ module.exports = {
         darkGrayishBlue: "hsl(220, 10%, 33%)",
         grayishBlue: "hsl(201, 11%, 66%)",
       },
+      letterSpacing: {
+        widest: ".3em",
+      },
     },
   },
   plugins: [],

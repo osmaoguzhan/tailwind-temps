@@ -1,8 +1,6 @@
-"use client";
-
 import { Alata, Josefin_Sans } from "next/font/google";
 import styles from "./style.module.css";
-import { use, useEffect } from "react";
+import Button from "./button";
 
 export const metadata = {
   title: "Loopstudios",
@@ -20,25 +18,6 @@ const alata = Alata({
 });
 
 export default function LoopStudios() {
-  useEffect(() => {
-    const menuBtn = document.getElementById("menu-btn");
-    const menu = document.getElementById("menu");
-    if (menuBtn && menu) {
-      menuBtn.addEventListener("click", () => {
-        menuBtn.classList.toggle(styles.open);
-        menu.classList.toggle("hidden");
-        menu.classList.toggle("flex");
-      });
-    }
-    return () => {
-      if (menuBtn && menu) {
-        menuBtn.removeEventListener("click", () => {
-          menu.classList.toggle("hidden");
-        });
-      }
-    };
-  }, []);
-
   return (
     <div className={`${josefin.className} min-h-screen`}>
       {/*hero section*/}
@@ -74,15 +53,7 @@ export default function LoopStudios() {
             </div>
             {/* hamburger menu*/}
             <div className="md:hidden">
-              <button
-                id="menu-btn"
-                type="button"
-                className={`z-40 block md:hidden focus:outline-none ${styles.hamburger}`}
-              >
-                <span className={styles.hamtop}></span>
-                <span className={styles.hammiddle}></span>
-                <span className={styles.hambottom}></span>
-              </button>
+              <Button />
             </div>
           </nav>
           <div

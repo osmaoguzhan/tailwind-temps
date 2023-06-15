@@ -14,9 +14,14 @@ module.exports = {
       },
       colors: {
         strongCyan: "hsl(171, 66%, 44%)",
+        cyanLight: "hsl(180, 66%, 69%)",
         lightBlue: "hsl(233, 100%, 69%)",
         darkGrayishBlue: "hsl(220, 10%, 33%)",
         grayishBlue: "hsl(201, 11%, 66%)",
+        darkViolet: "hsl(257, 27%, 26%)",
+        grayishViolet: "hsl(257, 7%, 63%)",
+        veryDarkBlue: "hsl(255, 11%, 22%)",
+        veryDarkViolet: "hsl(260, 8%, 14%)",
       },
       letterSpacing: {
         widest: ".3em",
